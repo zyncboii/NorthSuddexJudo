@@ -9,15 +9,14 @@
 * */
 
 public abstract class AthleteInformation {
-    public String athleteName;
-    public String athleteWeightCategory;
-    public String athleteTrainingPlan;
-    public String athleteCurrentWeightCategory;
-    public int categoryWeightLimit;
-    public int categoryWeightMinimum;
-    public int athleteWeight;
-    public int athletePrivateCoachingHours;
-    public int athleteNumberOfCompetitions;
+    private String athleteName;
+    private String athleteWeightCategory;
+    private String athleteTrainingPlan;
+    private int categoryWeightLimit;
+    private int categoryWeightMinimum;
+    private int athleteWeight;
+    private int athletePrivateCoachingHours;
+    private int athleteNumberOfCompetitions;
 
     // Setters
     public void setAthleteName(String name){
@@ -95,8 +94,16 @@ public abstract class AthleteInformation {
     public int getAthleteNumberOfCompetitions(){
         return athleteNumberOfCompetitions;
     }
+    public int getCategoryWeightLimit(){
+        return categoryWeightLimit;
+    }
+
+    public int getCategoryWeightMinimum(){
+        return categoryWeightMinimum;
+    }
 
     public String getAthleteCurrentWeightCategory() {
+        String athleteCurrentWeightCategory;
         if (athleteWeight >= 66 && athleteWeight <= 72) {
             athleteCurrentWeightCategory = "Flyweight";
         } else if (athleteWeight >= 73 && athleteWeight <= 80) {

@@ -14,6 +14,11 @@ public class Athlete extends AthleteCostComputation{
         String weightCategory = getAthleteWeightCategory();
         String currentWeightCategory = getAthleteCurrentWeightCategory();
         int requiredWeight;
+        int athleteWeight = getAthleteWeight();
+        int categoryWeightMinimum = getCategoryWeightMinimum();
+        int categoryWeightLimit = getCategoryWeightLimit();
+        int athleteNumberOfCompetitions = getAthleteNumberOfCompetitions();
+        int athletePrivateCoachingHours = getAthletePrivateCoachingHours();
 
         System.out.println("Name: " + getAthleteName());
         System.out.println("Weight: " + getAthleteWeight());
@@ -33,13 +38,13 @@ public class Athlete extends AthleteCostComputation{
         if (!weightCategory.equals(currentWeightCategory)){
             if (athleteWeight < categoryWeightMinimum){
                 requiredWeight = categoryWeightMinimum - athleteWeight;
-                System.out.println("Your current weight is " + athleteWeight + " (" + getAthleteCurrentWeightCategory() + ")" + ", the minimum weight for your desired category is " + categoryWeightMinimum + " (" + athleteWeightCategory + "). You need to gain " + requiredWeight + " to compete in this category.");
+                System.out.println("Your current weight is " + athleteWeight + " (" + getAthleteCurrentWeightCategory() + ")" + ", the minimum weight for your desired category is " + categoryWeightMinimum + " (" + weightCategory + "). You need to gain " + requiredWeight + " to compete in this category.");
             } else if (athleteWeight > categoryWeightLimit) {
                 requiredWeight = athleteWeight - categoryWeightLimit;
-                System.out.println("Your current weight is " + athleteWeight + " (" + getAthleteCurrentWeightCategory() + ")" + ", the maximum weight for your desired category is " + categoryWeightLimit + " (" + athleteWeightCategory + "). You need to lose " + requiredWeight + " to compete in this category.");
+                System.out.println("Your current weight is " + athleteWeight + " (" + getAthleteCurrentWeightCategory() + ")" + ", the maximum weight for your desired category is " + categoryWeightLimit + " (" + weightCategory + "). You need to lose " + requiredWeight + " to compete in this category.");
             }
         } else {
-            System.out.println("Your current weight is " + athleteWeight + " (" + getAthleteCurrentWeightCategory() + ")" + ", which is suitable for your desired category, " + athleteWeightCategory + " (" + categoryWeightMinimum + "-" + categoryWeightLimit + "). You are eligible to compete in this category.");
+            System.out.println("Your current weight is " + athleteWeight + " (" + getAthleteCurrentWeightCategory() + ")" + ", which is suitable for your desired category, " + weightCategory + " (" + categoryWeightMinimum + "-" + categoryWeightLimit + "). You are eligible to compete in this category.");
         }
     }
 }
