@@ -1,5 +1,5 @@
 /*
-* AthleteInformaiton
+* AthleteInformation
 *
 * 17.0.1
 *
@@ -59,7 +59,7 @@ public abstract class AthleteInformation {
 
     public void setAthleteWeight(int weight){
         this.athleteWeight = weight;
-        getAthleteCurrentWeightCategory();
+        getAthleteCurrentWeightCategory(); // Automatically gets athlete current weight category based on weight input
     }
 
     public void setAthletePrivateCoachingHours(int privateCoachingHours){
