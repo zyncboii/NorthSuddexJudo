@@ -9,26 +9,18 @@
 * */
 
 public class AthleteCostComputation extends AthleteInformation{
+    private static final int weeksInMonth = 4; // There are 4 weeks in a month
+
     // Computes Training Plan Cost
     public double getTrainingPlanCost(){
-        double basePrice;
-        double trainingPlanCost = 0;
+        double basePrice = 0;
 
         switch (getAthleteTrainingPlan()) {
-            case "Beginner" -> {
-                basePrice = 25.00;
-                trainingPlanCost = basePrice * 4;
-            }
-            case "Intermediate" -> {
-                basePrice = 30.00;
-                trainingPlanCost = basePrice * 4;
-            }
-            case "Elite" -> {
-                basePrice = 35.00;
-                trainingPlanCost = basePrice * 4;
-            }
+            case "Beginner" -> basePrice = 25.00;
+            case "Intermediate" -> basePrice = 30.00;
+            case "Elite" -> basePrice = 35.00;
         }
-        return trainingPlanCost;
+        return basePrice * weeksInMonth;
     }
     // Computes Competition Cost
     public double getCompetitionCost(){
@@ -39,6 +31,6 @@ public class AthleteCostComputation extends AthleteInformation{
     // Computes Coaching Cost
     public double getCoachingCost(){
         double basePrice = 9;
-        return basePrice * (getAthletePrivateCoachingHours() * 4);
+        return basePrice * (getAthletePrivateCoachingHours() * weeksInMonth);
     }
 }
