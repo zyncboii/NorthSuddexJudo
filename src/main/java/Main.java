@@ -1,3 +1,12 @@
+/*
+ * Main
+ *
+ * 17.0.1
+ *
+ * 10-14-2024
+ *
+ * Kevin Jeff Ouano
+ * */
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -70,8 +79,7 @@ public class Main {
                     do {
                         athlete.displayWeightCategories();
                         System.out.print("Enter Athlete Weight Category: ");
-                        int weightCategoryChoice = 0;
-                        weightCategoryChoice = scan.nextInt();
+                        int weightCategoryChoice = scan.nextInt();
                         scan.nextLine();
 
                         if (weightCategoryChoice > 0 && weightCategoryChoice < 7) {
@@ -85,7 +93,7 @@ public class Main {
                                 athlete.setAthleteWeightCategory("Middleweight");
                             } else if (weightCategoryChoice == 5) {
                                 athlete.setAthleteWeightCategory("Light-Heavyweight");
-                            } else if (weightCategoryChoice == 6) {
+                            } else {
                                 athlete.setAthleteWeightCategory("Heavyweight");
                             }
                             validInput = true;
@@ -105,7 +113,7 @@ public class Main {
                         } else if (plan == 2 || plan == 3) {
                             if (plan == 2){
                                 athlete.setAthleteTrainingPlan("Intermediate");
-                            } else if (plan == 3) {
+                            } else {
                                 athlete.setAthleteTrainingPlan("Elite");
                             }
                             eligibleForCompetition = true;
@@ -117,7 +125,7 @@ public class Main {
                     if (eligibleForCompetition){
                         do {
                             System.out.print("Enter number of competitions (0-1): ");
-                            int competitions = 0;
+                            int competitions;
                             competitions = scan.nextInt();
                             scan.nextLine();
 
@@ -157,7 +165,7 @@ public class Main {
                         athlete.displayAthleteInfo();
                     }
                 }
-            } else if (choice == 3) {
+            } else {
                 exitApp = true;
                 System.out.println("Exiting the application. Goodbye!");
             }

@@ -3,6 +3,9 @@
 *
 * 17.0.1
 *
+* 10-14-2024
+*
+* Kevin Jeff Ouano
 * */
 
 public abstract class AthleteInformation {
@@ -120,12 +123,5 @@ public abstract class AthleteInformation {
         System.out.println("4. Middleweight (90 - 99)");
         System.out.println("5. Light-Heavyweight (100)");
         System.out.println("6. Heavyweight (100+)");
-    }
-    public int getCategoryWeightMinimum(){
-        return categoryWeightMinimum;
-    }
-
-    public int getCategoryWeightLimit(){
-        return categoryWeightLimit;
     }
 }
