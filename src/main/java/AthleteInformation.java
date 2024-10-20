@@ -18,6 +18,19 @@ public abstract class AthleteInformation {
     private int athletePrivateCoachingHours;
     private int athleteNumberOfCompetitions;
 
+    // Constructors
+    public AthleteInformation(){
+
+    }
+
+    public AthleteInformation(String athleteName, int athleteWeight, String athleteWeightCategory, String trainingPlan, int athletePrivateCoachingHours, int athleteNumberOfCompetitions) {
+        this.athleteName = athleteName;
+        this.athleteWeight = athleteWeight;
+        this.athleteWeightCategory = athleteWeightCategory;
+        this.athleteTrainingPlan = trainingPlan;
+        this.athletePrivateCoachingHours = athletePrivateCoachingHours;
+        this.athleteNumberOfCompetitions = athleteNumberOfCompetitions;
+    }
     // Setters
     public void setAthleteName(String name){
         this.athleteName = name;
@@ -122,6 +135,7 @@ public abstract class AthleteInformation {
         return athleteCurrentWeightCategory;
     }
 
+    // Display list of weight categories
     public void displayWeightCategories(){
         System.out.println("Weight Categories:");
         System.out.println("1. Flyweight (66 - 72)");
