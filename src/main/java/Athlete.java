@@ -1,12 +1,12 @@
 /*
- * Athlete
- *
- * 17.0.1
- *
- * 10-14-2024
- *
- * Kevin Jeff Ouano
- * */
+* Athlete
+*
+* 17.0.1
+*
+* 10-14-2024
+*
+* Kevin Jeff Ouano
+* */
 
 // This class formats the display
 public class Athlete extends AthleteCostComputation{

@@ -1,12 +1,12 @@
 /*
- * Main
- *
- * 17.0.1
- *
- * 10-14-2024
- *
- * Kevin Jeff Ouano
- * */
+* Main
+*
+* 17.0.1
+*
+* 10-14-2024
+*
+* Kevin Jeff Ouano
+* */
 import java.util.Scanner;
 import java.util.ArrayList;
 

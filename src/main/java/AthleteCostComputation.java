@@ -1,12 +1,12 @@
 /*
- * AthleteCostComputation
- *
- * 17.0.1
- *
- * 10-14-2024
- *
- * Kevin Jeff Ouano
- * */
+* AthleteCostComputation
+*
+* 17.0.1
+*
+* 10-14-2024
+*
+* Kevin Jeff Ouano
+* */
 
 public class AthleteCostComputation extends AthleteInformation{
     // Computes Training Plan Cost
