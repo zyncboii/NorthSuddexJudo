@@ -23,13 +23,13 @@ public abstract class AthleteInformation {
 
     }
 
-    public AthleteInformation(String athleteName, int athleteWeight, String athleteWeightCategory, String trainingPlan, int athletePrivateCoachingHours, int athleteNumberOfCompetitions) {
-        this.athleteName = athleteName;
-        this.athleteWeight = athleteWeight;
-        this.athleteWeightCategory = athleteWeightCategory;
+    public AthleteInformation(String name, int weight, String weightCategory, String trainingPlan, int coachingHours, int numberOfCompetitions) {
+        this.athleteName = name;
+        this.athleteWeight = weight;
+        this.athleteWeightCategory = weightCategory;
         this.athleteTrainingPlan = trainingPlan;
-        this.athletePrivateCoachingHours = athletePrivateCoachingHours;
-        this.athleteNumberOfCompetitions = athleteNumberOfCompetitions;
+        this.athletePrivateCoachingHours = coachingHours;
+        this.athleteNumberOfCompetitions = numberOfCompetitions;
     }
     // Setters
     public void setAthleteName(String name){
@@ -79,8 +79,8 @@ public abstract class AthleteInformation {
         this.athletePrivateCoachingHours = privateCoachingHours;
     }
 
-    public void setAthleteNumberOfCompetitions(int athleteNumberOfCompetitions){
-        this.athleteNumberOfCompetitions = athleteNumberOfCompetitions;
+    public void setAthleteNumberOfCompetitions(int numOfCompetitions){
+        this.athleteNumberOfCompetitions = numOfCompetitions;
     }
 
     // Getters
