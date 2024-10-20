@@ -40,7 +40,7 @@ public abstract class AthleteInformation {
         this.athleteTrainingPlan = trainingPlan;
     }
 
-    public   void setAthleteWeightCategory(String athleteWeightCategory){
+    public void setAthleteWeightCategory(String athleteWeightCategory){
         switch (athleteWeightCategory) {
             case "Flyweight" -> {
                 this.categoryWeightMinimum = 66;
