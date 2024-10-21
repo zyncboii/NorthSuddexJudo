@@ -1,12 +1,9 @@
 /*
-* AthleteInformation
-*
-* 17.0.1
-*
-* 10-14-2024
-*
-* Kevin Jeff Ouano
-* */
+ * This class is responsible for handling the information of the athletes
+ *
+ * Version: 1.0.0
+ * Author: Kevin Jeff Ouano
+ * */
 
 public abstract class AthleteInformation {
     private String athleteName;

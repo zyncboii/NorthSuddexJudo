@@ -1,12 +1,9 @@
 /*
-* Athlete
-*
-* 17.0.1
-*
-* 10-14-2024
-*
-* Kevin Jeff Ouano
-* */
+ * This class is responsible for displaying the proper format
+ *
+ * Version: 1.0.0
+ * Author: Kevin Jeff Ouano
+ * */
 
 // This class formats the display
 public class Athlete extends AthleteCostComputation{
@@ -20,6 +17,7 @@ public class Athlete extends AthleteCostComputation{
         int athleteNumberOfCompetitions = getAthleteNumberOfCompetitions();
         int athletePrivateCoachingHours = getAthletePrivateCoachingHours();
 
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("Name: " + getAthleteName());
         System.out.println("Weight: " + getAthleteWeight());
         System.out.println("Category: " + getAthleteWeightCategory());
@@ -46,5 +44,6 @@ public class Athlete extends AthleteCostComputation{
         } else {
             System.out.println("Your current weight is " + athleteWeight + " (" + getAthleteCurrentWeightCategory() + ")" + ", which is suitable for your desired category, " + weightCategory + " (" + categoryWeightMinimum + "-" + categoryWeightLimit + "). You are eligible to compete in this category.");
         }
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------");
     }
 }

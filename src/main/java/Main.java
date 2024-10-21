@@ -1,11 +1,8 @@
 /*
- * Main
+ * This class is responsible for the user interaction
  *
- * 17.0.1
- *
- * 10-14-2024
- *
- * Kevin Jeff Ouano
+ * Version: 1.0.0
+ * Author: Kevin Jeff Ouano
  * */
 
 import java.util.Scanner;
