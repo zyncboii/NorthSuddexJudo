@@ -44,10 +44,8 @@ public class Main {
                     choice = scan.nextInt();
                     scan.nextLine();
                     if (choice == 1) {
-                        boolean continueRegistration = true;
+                        Athlete athlete = new Athlete(); // Create an instance of the object
 
-
-                        Athlete athlete = new Athlete();
                         // Input Athlete Name
                         System.out.print("Enter Athlete Name: ");
                         String name = scan.nextLine();

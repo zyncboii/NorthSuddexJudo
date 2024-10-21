@@ -29,7 +29,7 @@ public class Athlete extends AthleteCostComputation{
 
         }
         else if (getAthleteTrainingPlan().equals("Beginner")){
-            System.out.printf("    2. Private Coaching - " + athletePrivateCoachingHours + "Hours @ $%.2f\n",getCoachingCost());
+            System.out.printf("    2. Private Coaching - " + athletePrivateCoachingHours + " Hours per week @ $%.2f\n",getCoachingCost());
         }
         System.out.printf("Total Cost: $%.2f\n",(getTrainingPlanCost() + getCompetitionCost() + getCoachingCost()));
 
