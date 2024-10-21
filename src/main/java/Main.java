@@ -171,7 +171,7 @@ public class Main {
                                 }
                             } while (!validInput);
                             validInput = false;
-
+                            // Displays athlete information and stores it in arraylist
                             athlete.displayAthleteInfo();
                             athletes.add(athlete);
 
